@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: row;
-  font-family: 'Quantico', sans-serif;
+  font-family: 'Roboto', sans-serif;
   
 }
 
@@ -11,7 +11,7 @@
   left: 15rem;
   color: blue;
   background-color: rgba(5, 5, 5, 0.466);
-  width: 20rem;
+  /* width: 20rem; */
  
 }
 
@@ -24,39 +24,77 @@
 .right {
   display: flex;
   flex-direction: column;
+  width: 67vw;
+  background-color: aliceblue;
   
 }
+
+.left {
+  width: 33vw;
+}
+
 
 .top {
   padding-left: 2rem;
   padding-top: 5rem;
   height: 33vh;
   background-color: aliceblue;
+
+  
 }
 
 .top > p {
-  width: 30vw;
-  font-size: large;
-  word-wrap: break-word;
+  width: 55vw;
+  font-size: 35px;
+  font-weight: bold;
+ 
 }
 
 .middle {
-  padding-left: 2rem;
-  padding-top: 2rem;
-  display: flex;
-  flex-direction: row;
+  padding: 1rem 2rem;
+  display: block;
   height: 33vh;
+  background-color: white;
+  border-bottom: solid thin light gray;
+  box-shadow: 0px -2px 10px rgb(184, 184, 184);
+  box-shadow: 0px  2px 10px rgb(184, 184, 184);
+}
+
+
+
+input {
+  width: 15rem;
+  height: 1.5rem;
+  border: solid thin;
+  border-radius: 5px;
+  border-color: lightgray;
+  background-color: rgba(247, 244, 207, 0.336);
+}
+
+.name {
+  display: flex;
+}
+
+.contact {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.enterpassword {
+  display: flex;
+  padding-top: 2rem;
 }
 
 .firstname {
-  margin: 3rem;
   display: flex;
   flex-direction: column;
+  
 }
 
 .lastname {
   display: flex;
   flex-direction: column;
+  padding-left: 4rem;
 }
 
 .email {
@@ -64,9 +102,22 @@
   flex-direction: column;
 }
 
+.email > input:valid {
+  outline: solid thin green;
+}
+
+.email > input:invalid {
+  outline: solid thin red;
+}
+
 .phone {
   display: flex;
   flex-direction: column;
+  padding-left: 4rem;
+}
+
+.phone > input:valid {
+  outline: solid thin green;
 }
 
 .password {
@@ -74,15 +125,37 @@
   flex-direction: column;
 }
 
+.password > input:invalid {
+  outline: solid thin red;
+}
+
+.password > input:valid {
+  outline: solid thin green;
+}
+
+
 .confirm {
   display: flex;
   flex-direction: column;
+  padding-left: 4rem;
 }
+
+.confirm > input:invalid {
+  outline: solid thin red;
+}
+
+.confirm > input:valid {
+  outline: solid thin green;
+}
+
+
 .bottom {
   padding-left: 2rem;
   padding-top: 2rem;
   height: 33vh;
   background-color: aliceblue;
+  /* border-top: solid thin light gray;
+  box-shadow: 0px -5px 5px rgb(184, 184, 184); */
 }
 
 .bottom > button {

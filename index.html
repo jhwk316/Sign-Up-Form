@@ -24,40 +24,52 @@
  <!-- div with info and login areas -->
   <div class="right">
     <div class="top">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Lorem Ipsum</p>
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+        Sign up <span style="font-style: italic;">now</span> to get started<br><br> Lorem Ipsum</p>
     </div>
     <div class="middle">
-      <p>Let's do this!</p>
-        <div class="firstname">
-        <!-- First Name -->
-        <label for="FirstName">First Name</label>
-        <input name="firstname" type="text" placeholder="Enter your first name" required>
+
+
+      
+        <p>Let's do this!</p>
+      <div class="name">  
+          <div class="firstname">
+          <!-- First Name -->
+          <label for="FirstName">First Name</label>
+          <input name="firstname" type="text" placeholder="Enter your first name" required>
+          </div>
+           <!-- Last Name -->
+        <div class="lastname">
+          <label for="LastName">Last Name</label>
+          <input name="lastname" type="text" placeholder="Enter your last name" required>
         </div>
-      <!-- Last Name -->
-      <div class="lastname">
-        <label for="LastName">Last Name</label>
-        <input name="lastname" type="text" placeholder="Enter your last name" required>
-      </div>
-      <!-- Email -->
-      <div class="email">
-        <label for="email">Email</label>
-        <input name="email" type="email" placeholder="Email" required>
-      </div>
+      </div>  
+
+      <div class="contact">
+        <!-- Email -->
+        <div class="email">
+          <label for="email">Email</label>
+          <input name="email" type="email" placeholder="Email" required>
+        </div>
         <!-- Phone Number -->
-      <div class="phone">
-        <label for="phone">Phone Number</label>
-        <input name="phone" type="number" placeholder="000-000-0000" required>
+        <div class="phone">
+          <label for="phone">Phone Number</label>
+          <input name="phone" type="tel" maxlength="10" minlength="10" placeholder="000-000-0000" required>
+        </div>
       </div>
-        <!-- Password -->
-      <div class="password">
-        <label for="password">Password</label>
-        <input name="password" type="password" required>
-      </div>
-        <!-- Confirm Password -->
-      <div class="confirm">
-        <label for="confirmpassword">Confirm Password</label>
-        <input name="confirmpassword" type="password" required>
+
+
+      <div class="enterpassword">
+          <!-- Password -->
+        <div class="password">
+          <label for="password">Password</label>
+          <input name="password" form="password" type="password" pattern="[a-zA-Z0-9]{8,20}" required>
+        </div>
+          <!-- Confirm Password -->
+        <div class="confirm">
+          <label for="confirmpassword">Confirm Password</label>
+          <input name="confirmpassword" type="password" pattern="[a-zA-Z0-9]{8,20}" required>
+        </div>
       </div>
       
     </div>
